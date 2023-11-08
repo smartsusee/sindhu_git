@@ -1,0 +1,15 @@
+p {
+  color: red;
+  background-color: wheat;
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+}
+
+h1 {
+  color: violet;
+}
+
+h2 {
+  color: turquoise;
+}

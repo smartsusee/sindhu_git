@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+      }
+
+      #grid-area {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+
+        text-align: center;
+        grid-template-areas:
+          "h h h "
+          "s1 m s2"
+          "f f f";
+      }
+
+      #grid-area div {
+        border: 1px solid black;
+      }
+
+      #header {
+        grid-area: h;
+      }
+      #sub1 {
+        grid-area: s1;
+      }
+      #main {
+        grid-area: m;
+      }
+
+      #sub2 {
+        grid-area: s2;
+      }
+      #footer {
+        grid-area: f;
+      }
+      p:hover::before {
+        content: "_world_";
+      }
+      p:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+                  header
+
+           sub1    main      sub2
+
+                  footer -->
+
+    <div id="grid-area">
+      <div id="header">header</div>
+      <div id="sub1">sub1</div>
+      <div id="main">main</div>
+      <div id="sub2">sub2</div>
+      <div id="footer">footer</div>
+    </div>
+
+    <p>hello</p>
+  </body>
+</html>

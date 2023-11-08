@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- scale , translate , rotate , skew  -->
+
+    <style>
+      p {
+        border: 1px solid black;
+        width: 100px;
+        text-align: center;
+        padding: 5px;
+      }
+
+      p:hover {
+        cursor: pointer;
+        transition: 5s;
+        transform: skew(0deg);
+      }
+      #animation_box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(163, 140, 233);
+
+        animation-name: animate;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+      }
+
+      /* 100% = 4s */
+      /* 25*4 = 100  */
+
+      @keyframes animate {
+        25% {
+          background-color: violet;
+          transform: translateX(100px);
+        }
+        50% {
+          background-color: yellow;
+          transform: rotate(360deg);
+        }
+
+        75% {
+          background-color: teal;
+        }
+        100% {
+          background-color: thistle;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="animation_box"></div>
+
+    <p>hi</p>
+  </body>
+</html>

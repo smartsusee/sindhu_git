@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 4px double black;
+
+        border-collapse: collapse;
+
+        text-align: center;
+        /* border-width: ;
+    border-style: ;
+    border-color: ; */
+      }
+
+      table {
+        width: 500px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Name      Age      Email
+    xxxx      22       xxxxgmail.com
+    yyyy      23       yyyygmail.com -->
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <td colspan="2">jeya</td>
+
+        <!-- <td>yyyy</td> -->
+      </tr>
+
+      <tr>
+        <th rowspan="2">Age</th>
+        <td>22</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <!-- <th>Email</th> -->
+        <td>22</td>
+        <td>23</td>
+      </tr>
+    </table>
+  </body>
+</html>

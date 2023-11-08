@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      #dropdown {
+        display: flex;
+        width: 500px;
+        justify-content: space-around;
+      }
+
+      #list {
+        display: none;
+      }
+
+      #dropdown li:nth-child(1):hover #list {
+        display: block;
+      }
+      #list_2 {
+        display: none;
+      }
+
+      #list li:nth-child(3):hover #list_2 {
+        display: block;
+        border: 1px solid black;
+        padding: 20px;
+      }
+      li {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul id="dropdown">
+        <li>
+          1
+
+          <ul id="list">
+            <li>one</li>
+            <li>two</li>
+            <li>
+              three
+
+              <ul id="list_2">
+                <li>0</li>
+                <li>9</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+  </body>
+</html>

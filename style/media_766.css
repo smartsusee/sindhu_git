@@ -1,0 +1,8 @@
+@media (max-width: 766px) {
+  #para {
+    background-color: rgb(147, 222, 135);
+    width: 200px;
+    text-align: center;
+    margin-left: 250px;
+  }
+}
